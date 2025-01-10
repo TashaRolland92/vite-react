@@ -1,25 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+// Base
+@use './styles/base/reset';
+@use './styles/base/typography';
 
-* {
-	box-sizing: border-box;
-}
+// Utils
+@use './styles/utils/variables' as *;
+@use './styles/utils/mixins' as *;
 
-body{
-    display: flex;
-	font-size: 10px;
-    color: #58bef2;
-    background-color: #053046;
-	font-family: "Poppins", serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-h1{
-    font-size: 6em;
-    text-transform: uppercase;
-}
-
-p{
-    font-size: 1.6em;
-}
+// Hero
+@use './styles/components/hero/hero_title'
