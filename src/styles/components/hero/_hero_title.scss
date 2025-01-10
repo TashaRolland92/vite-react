@@ -6,6 +6,7 @@
 }
 
 //  Gradient Text
-.hero__title--gradient-text {
+.hero__title--gradient-text,
+.hero__subtitle--gradient-text {
     @include gradientText($mimi__pink, $mauve, $lilac, $periwinkle, $jordy__blue);
 }
