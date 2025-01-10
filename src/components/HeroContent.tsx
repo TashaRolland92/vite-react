@@ -16,7 +16,7 @@ const HeroContent = () => (
                 backSpeed={60}
             /></span>
         </h2>
-        <h3>Welcome to my portfolio, find out a little more about me, what I do in both my professional and personal time.</h3>
+        <h3>Welcome to my portfolio, find out a little more about me and what I do in both my professional and personal time.</h3>
     </>
 );
 
