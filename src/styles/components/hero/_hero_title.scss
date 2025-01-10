@@ -1,6 +1,9 @@
 @use '../../utils/variables' as *;
 @use '../../utils/mixins' as *;
 
+.hero__title{
+    color: $jordy__blue;
+}
 
 //  Gradient Text
 .hero__title--gradient-text {
