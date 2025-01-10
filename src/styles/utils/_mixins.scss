@@ -1,0 +1,24 @@
+// Responsive Breakpoints
+$tablet: 768px;
+$desktopLarge: 1400px;
+
+@mixin tablet{
+    @media(min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin desktopLarge{
+    @media (min-width: #{$desktopLarge}){
+        @content;
+    }
+}
+
+
+//  Gradient Text
+@mixin gradientText($colors...) {
+    background: linear-gradient(to right, $colors...);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

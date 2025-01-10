@@ -1,13 +1,9 @@
-import './index.scss'
+import Hero from './components/Hero';
 
-function App() {
-
-	return (
-		<>
-			<h1>Tasha Rolland Aarons</h1>
-			<p>Portfolio Coming Soon!</p>
-		</>
-	)
-}
+const App = () => (
+	<>
+		<Hero />
+	</>
+);
 
 export default App
