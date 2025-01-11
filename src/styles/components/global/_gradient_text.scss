@@ -1,0 +1,7 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+
+//  Gradient Text
+.default__gradient--text {
+    @include gradientText($mimi__pink, $mauve, $lilac, $periwinkle, $jordy__blue);
+}
