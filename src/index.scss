@@ -6,6 +6,8 @@
 @use './styles/utils/variables' as *;
 @use './styles/utils/mixins' as *;
 
+// Global
+@use './styles/components/global/gradient_text';
 
 // Hero
 @use './styles/components/hero/hero_title'

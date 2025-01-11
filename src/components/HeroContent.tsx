@@ -2,8 +2,8 @@ import { ReactTyped } from "react-typed";
 
 const HeroContent = () => (
     <>
-        <h1 className="hero__title">Hi, I'm <span className="hero__title--gradient-text">Tasha</span></h1>
-        <h2 className="hero__">I'm a <span className="hero__subtitle--gradient-text">
+        <h1 className="hero__title">Hi, I'm <span className="default__gradient--text">Tasha</span></h1>
+        <h2 className="hero__">I'm a <span className="default__gradient--text">
             <ReactTyped
                 strings={[
                     "Frontend Designer",
