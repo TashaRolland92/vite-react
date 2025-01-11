@@ -9,7 +9,7 @@ const HeroContent = () => (
                     "Frontend Designer",
                     "Frontend Developer",
                     "Tech Enthusiast",
-                    "Cocktail Lover 🍸",
+                    "Cocktail Lover",
                     "Crafting Aficinado.",
                 ]}
                 typeSpeed={60}
