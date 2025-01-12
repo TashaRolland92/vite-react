@@ -1,20 +1,8 @@
 @use '../utils/variables' as *;
 
-body{
-    display: flex;
-	font-size: 10px;
-	font-family: "Poppins", serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-h1, h2, h3{
-    color: $jordy__blue;
-}
-
 h1{
-    font-size: 6em;
+    margin: 0;
+    font-size: 4em;
     text-transform: uppercase;
 }
 

@@ -9,5 +9,20 @@
 // Global
 @use './styles/components/global/gradient_text';
 
+// Header
+@use './styles/components/header/header';
+@use './styles/components/header/nav';
+
 // Hero
-@use './styles/components/hero/hero_title'
+@use './styles/components/hero/hero_title';
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: #f4f4f4;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
