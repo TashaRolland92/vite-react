@@ -1,5 +1,12 @@
 @use '../../utils/variables' as *;
 
-.hero__title{
-    color: $jordy__blue;
+.hero{
+
+    &__title{
+        color: $jordy__blue;
+    }
+
+    &__subtitle{
+        color: $lilac;
+    }
 }

@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
 
-    .bar{
+    &__bar{
         width: 100%;
         height: 3px;
         transition: all .3s ease;
@@ -28,7 +28,7 @@
         }
     }
 
-    &.active{
+    &--active{
 
         .bar{
 
@@ -56,7 +56,7 @@
     }
 }
 
-.navbar{
+.nav{
     display: flex;
     height: 80px;
     padding: 0 20px;
@@ -68,7 +68,7 @@
         z-index: 1000;
     }
 
-    .nav-list{
+    &__list{
         right: 0;
         margin: 0;
         gap: 20px;
@@ -82,7 +82,7 @@
         flex-direction: column;
         background-color: $secondary__color;
 
-        &.active{
+        &--active{
             display: flex;
         }
 
@@ -93,50 +93,50 @@
             position: unset;
             flex-direction: row;
         }
+    }
 
-        a{
-            height: 40px;
-            display: flex;
-            padding: 0 10px;
-            font-size: 1.6em;
-            align-items: center;
-            text-decoration: none;
-            color: $primary__color;
-            transition: all .3s ease;
-        }
+    &__item{
+        &:first-child a{
+            border: 3px solid $mimi__pink;
 
-        li{
-            &:first-child a{
-                border: 3px solid $mimi__pink;
-
-                &:hover{
-                    background-color: $mimi__pink;
-                }
-            }
-
-            &:nth-child(2) a{
-                border: 3px solid $mauve;
-
-                &:hover{
-                    background-color: $mauve;
-                }
-            }
-
-            &:nth-child(3) a{
-                border: 3px solid $lilac;
-
-                &:hover{
-                    background-color: $lilac;
-                }
-            }
-
-            &:nth-child(4) a{
-                border: 3px solid $periwinkle;
-
-                &:hover{
-                    background-color: $periwinkle;
-                }
+            &:hover{
+                background-color: $mimi__pink;
             }
         }
+
+        &:nth-child(2) a{
+            border: 3px solid $mauve;
+
+            &:hover{
+                background-color: $mauve;
+            }
+        }
+
+        &:nth-child(3) a{
+            border: 3px solid $lilac;
+
+            &:hover{
+                background-color: $lilac;
+            }
+        }
+
+        &:nth-child(4) a{
+            border: 3px solid $periwinkle;
+
+            &:hover{
+                background-color: $periwinkle;
+            }
+        }
+    }
+
+    &__link{
+        height: 40px;
+        display: flex;
+        padding: 0 10px;
+        font-size: 1.6em;
+        align-items: center;
+        text-decoration: none;
+        color: $primary__color;
+        transition: all .3s ease;
     }
 }

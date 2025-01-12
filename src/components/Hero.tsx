@@ -2,9 +2,9 @@ import HeroContent from "./HeroContent";
 
 const Hero = () => (
     <div className="hero container">
+                <HeroContent />
         <div className="row">
             <div className="col">
-                <HeroContent />
             </div>
         </div>
     </div>
