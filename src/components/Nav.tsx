@@ -21,18 +21,26 @@ const Nav = () => {
     };
 
     return (
-        <nav className="navbar">
-            <h1 className="default__gradient--text"><img src={Logo} alt="Gradient Diamond Icon" className="diamond_icon"/> Tasha</h1>
-            <div className={`menu-toggle ${isNavOpen ? 'active' : ''}`} id="mobileMenu" onClick={toggleNav}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+        <nav className="nav">
+            <h1 className="default__gradient--text"><img src={Logo} alt="Gradient Diamond Icon" className="diamond-icon"/> Tasha</h1>
+            <div className={`menu-toggle ${isNavOpen ? 'menu-toggle--active' : ''}`} id="mobileMenu" onClick={toggleNav}>
+                <span className="menu-toggle__bar menu-toggle--top"></span>
+                <span className="menu-toggle__bar menu-toggle--middle"></span>
+                <span className="menu-toggle__bar menu-toggle--bottom"></span>
             </div>
-            <ul className={`nav-list ${isNavOpen ? 'active' : ''}`}>
-                <li><a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')}>About</a></li>
-                <li><a href="#section2" onClick={(e) => handleLinkClick(e, 'section2')}>Technical Skills</a></li>
-                <li><a href="#section3" onClick={(e) => handleLinkClick(e, 'section3')}>Professional Experience</a></li>
-                <li><a href="#section4" onClick={(e) => handleLinkClick(e, 'section4')}>Contact</a></li>
+            <ul className={`nav__list ${isNavOpen ? 'nav__list--active' : ''}`}>
+                <li className="nav__item nav__item--one">
+                    <a href="#section1" onClick={(e) => handleLinkClick(e, 'section1')} className="nav__link">About</a>
+                </li>
+                <li className="nav__item nav__item--two">
+                    <a href="#section2" onClick={(e) => handleLinkClick(e, 'section2')} className="nav__link">Technical Skills</a>
+                </li>
+                <li className="nav__item nav__item--three">
+                    <a href="#section3" onClick={(e) => handleLinkClick(e, 'section3')} className="nav__link">Professional Experience</a>
+                </li>
+                <li className="nav__item nav__item--four">
+                    <a href="#section4" onClick={(e) => handleLinkClick(e, 'section4')} className="nav__link">Contact</a>
+                </li>
             </ul>
         </nav>
     )

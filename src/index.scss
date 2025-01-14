@@ -7,14 +7,12 @@
 @use './styles/utils/mixins' as *;
 
 // Global
+@use './styles/components/global/grid';
 @use './styles/components/global/gradient_text';
+@use './styles/components/global/header';
+@use './styles/components/global/nav';
+@use './styles/components/global/hero';
 
-// Header
-@use './styles/components/header/header';
-@use './styles/components/header/nav';
-
-// Hero
-@use './styles/components/hero/hero_title';
 
 section {
     height: 100vh;
