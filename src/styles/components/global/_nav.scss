@@ -1,0 +1,142 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as *;
+
+.menu-toggle{
+    gap: 5px;
+    width: 30px;
+    height: 21px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+
+    &__bar{
+        width: 100%;
+        height: 3px;
+        transition: all .3s ease;
+
+        &:nth-child(1){
+            background-color: $mimi__pink;
+        }
+
+        &:nth-child(2){
+            background-color: $mauve;
+        }
+
+        &:nth-child(3){
+            background-color: $lilac;
+        }
+    }
+
+    &--active{
+
+        &__bar{
+
+            &--top{
+                top: 10px;
+                position: relative;
+                transform: rotate(45deg);
+            }
+
+            &--middle{
+                opacity: 0;
+            }
+
+            &--bottom{
+                top: -6px;
+                position: relative;
+                background-color: $mauve;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @include desktop{
+        display: none;
+    }
+}
+
+.nav{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop{
+        width: 100%;
+        z-index: 1000;
+    }
+
+    &__list{
+        right: 0;
+        margin: 0;
+        gap: 20px;
+        padding: 0;
+        top: 100%;
+        width: 300px;
+        display: none;
+        padding: 20px;
+        list-style: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: $secondary__color;
+
+        &--active{
+            display: flex;
+        }
+
+        @include desktop{
+            top: unset;
+            width: auto;
+            display: flex;
+            position: unset;
+            flex-direction: row;
+        }
+    }
+
+    &__item{
+
+        &--one a{
+            border: 3px solid $mimi__pink;
+
+            &:hover{
+                background-color: $mimi__pink;
+            }
+        }
+
+        &--two a{
+            border: 3px solid $mauve;
+
+            &:hover{
+                background-color: $mauve;
+            }
+        }
+
+        &--three a{
+            border: 3px solid $lilac;
+
+            &:hover{
+                background-color: $lilac;
+            }
+        }
+
+        &--four a{
+            border: 3px solid $periwinkle;
+
+            &:hover{
+                background-color: $periwinkle;
+            }
+        }
+    }
+
+    &__link{
+        height: 40px;
+        display: flex;
+        padding: 0 10px;
+        font-size: 1.6em;
+        align-items: center;
+        text-decoration: none;
+        color: $primary__color;
+        transition: all .3s ease;
+    }
+}

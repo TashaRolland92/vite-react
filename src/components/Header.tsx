@@ -1,11 +1,17 @@
 import Nav from './Nav';
 
 const Header = () => {
-  return (
-    <header className="header">
-        <Nav />
-    </header>
-  )
+	return (
+		<header className="header">
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+						<Nav />
+					</div>
+				</div>
+			</div>
+		</header>
+	)
 };
 
 export default Header;
