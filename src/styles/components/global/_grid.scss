@@ -1,0 +1,58 @@
+// Import Sass modules
+@use "sass:map";
+
+// Define breakpoints
+$breakpoints: (
+	md: 768px,
+	lg: 992px,
+);
+
+// Define gutter size
+$gutter: 15px;
+
+// Create a mixin for responsive columns
+@mixin makeCol($size, $columns: 12) {
+	padding-left: $gutter;
+	padding-right: $gutter;
+	flex: 0 0 calc(100% / $columns * $size);
+	max-width: calc(100% / $columns * $size);
+}
+
+// Create a container
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $gutter;
+	padding-right: $gutter;
+
+	@each $breakpoint, $width in $breakpoints {
+		@if $width != null {
+			@media (min-width: $width) {
+				max-width: $width + (2 * $gutter); // Adjust for container padding
+			}
+		}
+	}
+}
+
+// Row styling
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$gutter;  // Compensate for column padding
+	margin-right: -$gutter; // Compensate for column padding
+}
+
+// Column styling
+.col-12 {
+	@include makeCol(12);
+}
+
+.col-md-6 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, md)) {
+		@include makeCol(6);
+	}
+}
