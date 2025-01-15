@@ -1,25 +1,8 @@
 @use '../../utils/variables' as *;
 
 .hero{
-
-    &__title{
-        margin: 0 0 10px;
-        color: $jordy__blue;
-        font-size: clamp(3rem, 5vw, 4rem);
-    }
-
-    &__subtitle{
-        color: $lilac;
-        margin: 0 0 10px;
-        color: $jordy__blue;
-        font-size: clamp(2.2rem, 5vw, 3rem);
-    }
-
-    h3{
-        margin: 0 0 20px;
-        color: $periwinkle;
-        font-size: clamp(1.6rem, 5vw, 2rem);
-    }
+    height: 100vh;
+    background-color: $light__grey;
 
     &__image{
         width: 100%;
