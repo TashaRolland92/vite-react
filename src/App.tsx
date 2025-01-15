@@ -6,9 +6,11 @@ import TechnicalSkills from './components/TechnicalSkills';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Contact from './components/Contact';
 
+
+
 const App = () => (
 	<>
-		{process.env.NODE_ENV === "development" ? (
+		{process.env.NODE_ENV === "production" ? (
 			<>
 				<Header />
 				<Hero />
