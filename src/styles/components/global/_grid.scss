@@ -3,36 +3,74 @@
 
 // Define breakpoints
 $breakpoints: (
+	sm: 576px,
 	md: 768px,
 	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
+
+// Define container widths for each breakpoint
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
 );
 
 // Define gutter size
 $gutter: 15px;
 
-// Create a mixin for responsive columns
-@mixin makeCol($size, $columns: 12) {
-	padding-left: $gutter;
-	padding-right: $gutter;
-	flex: 0 0 calc(100% / $columns * $size);
-	max-width: calc(100% / $columns * $size);
-}
-
-// Create a container
-.container {
+// Mixin for container
+@mixin container() {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: $gutter;
 	padding-right: $gutter;
 
-	@each $breakpoint, $width in $breakpoints {
-		@if $width != null {
-			@media (min-width: $width) {
-				max-width: $width + (2 * $gutter); // Adjust for container padding
-			}
+	// Loop through the breakpoints and apply the max-width for each
+	@each $breakpoint, $width in $container-max-widths {
+		@media (min-width: map.get($breakpoints, $breakpoint)) {
+			max-width: $width;
 		}
 	}
+}
+
+// Create container class
+.container {
+	@include container();
+}
+
+// Define container-lg
+.container-lg {
+	width: 100%;
+	@include container();
+}
+
+// Adjusting for large screens using a specific class
+.container-xl {
+	@include container();
+	@media (min-width: 1200px) {
+	  max-width: 1140px;
+	}
+}
+
+// .container-xxl for 1400px and up
+.container-xxl {
+	@include container();
+	@media (min-width: 1400px) {
+	  max-width: 1320px;
+	}
+}
+
+// Create a mixin for responsive columns
+@mixin make-col($size, $columns: 12) {
+	padding-left: $gutter;
+	padding-right: $gutter;
+	flex: 0 0 calc(100% / $columns * $size);
+	max-width: calc(100% / $columns * $size);
 }
 
 // Row styling
@@ -45,7 +83,7 @@ $gutter: 15px;
 
 // Column styling
 .col-12 {
-	@include makeCol(12);
+	@include make-col(12);
 }
 
 .col-md-6 {
@@ -53,6 +91,6 @@ $gutter: 15px;
 	max-width: 100%;
 
 	@media (min-width: map.get($breakpoints, md)) {
-		@include makeCol(6);
+		@include make-col(6);
 	}
 }
