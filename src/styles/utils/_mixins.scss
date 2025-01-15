@@ -1,10 +1,17 @@
 // Responsive Breakpoints
 $tablet: 768px;
+$tabletLandscape: 1024px;
 $desktop: 992px;
 $desktopLarge: 1400px;
 
 @mixin tablet{
     @media(min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin tabletLandscape{
+    @media(min-width: #{$tabletLandscape}){
         @content;
     }
 }
