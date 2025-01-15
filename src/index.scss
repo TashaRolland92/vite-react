@@ -8,6 +8,7 @@
 
 // Global
 @use './styles/components/global/grid';
+@use './styles/components/global/buttons';
 @use './styles/components/global/gradient_text';
 @use './styles/components/global/header';
 @use './styles/components/global/nav';
@@ -15,7 +16,6 @@
 
 
 section {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
