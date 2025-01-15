@@ -3,19 +3,22 @@
 .hero{
 
     &__title{
-        margin: 0;
+        margin: 0 0 10px;
         color: $jordy__blue;
+        font-size: clamp(3rem, 5vw, 4rem);
     }
 
     &__subtitle{
-        margin: 0;
         color: $lilac;
-        font-size: 32px;
+        margin: 0 0 10px;
+        color: $jordy__blue;
+        font-size: clamp(2.2rem, 5vw, 3rem);
     }
 
     h3{
-        font-size: 26px;
+        margin: 0 0 20px;
         color: $periwinkle;
+        font-size: clamp(1.6rem, 5vw, 2rem);
     }
 
     &__image{
