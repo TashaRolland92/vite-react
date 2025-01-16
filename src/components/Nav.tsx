@@ -11,9 +11,13 @@ const Nav = () => {
         const targetSection = document.getElementById(sectionId);
 
         if(targetSection) {
-            targetSection.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
+            // Get the position of the target section
+            const targetPosition = targetSection.offsetTop;
+
+            // Scroll to the target section, but offset by the height of the sticky header (80px)
+            window.scrollTo({
+                top: targetPosition - 80,  // Adjust by the header height
+                behavior: 'smooth',        // Smooth scroll
             });
         }
 
