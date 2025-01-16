@@ -1,22 +1,24 @@
 // Base
-@use './styles/base/reset';
-@use './styles/base/typography';
+@use "./styles/base/reset";
+@use "./styles/base/typography";
 
 // Utils
-@use './styles/utils/variables' as *;
-@use './styles/utils/mixins' as *;
+@use "./styles/utils/variables" as *;
+@use "./styles/utils/mixins" as *;
 
 // Global
-@use './styles/components/global/grid';
-@use './styles/components/global/buttons';
-@use './styles/components/global/gradient_text';
-@use './styles/components/global/header';
-@use './styles/components/global/nav';
-@use './styles/components/global/hero';
+@use "./styles/components/global/grid";
+@use "./styles/components/global/buttons";
+@use "./styles/components/global/gradient_text";
+@use "./styles/components/global/header";
+@use "./styles/components/global/nav";
+@use "./styles/components/global/hero";
+@use "./styles/components/global/about";
 
 
 section {
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     background: $light__grey;

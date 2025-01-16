@@ -94,3 +94,8 @@ $gutter: 15px;
 		@include make-col(6);
 	}
 }
+
+// Global Grid Classes
+.d-flex{
+	display: flex;
+}
