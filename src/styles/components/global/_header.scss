@@ -1,10 +1,11 @@
-@use '../../utils/variables' as *;
+@use "../../utils/variables" as *;
 
 header{
     top: 0;
     z-index: 100;
     position: sticky;
     background-color: $secondary__color;
+    border-bottom: 1px solid $periwinkle;
 
     h1{
         display: flex;
