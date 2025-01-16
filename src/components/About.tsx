@@ -1,4 +1,4 @@
-import TRA_CV from "../assets/documents/TRA_CV.pdf";
+import TRA_CV from "/TRA_CV.pdf";
 import Selfie from "../assets/about/selfie.svg";
 
 const About = () => {
