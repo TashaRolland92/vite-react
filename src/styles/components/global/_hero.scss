@@ -1,6 +1,7 @@
 @use "../../utils/variables" as *;
 
 .hero{
+	height: 100vh;
     background-color: transparent;
 
     &__content{
