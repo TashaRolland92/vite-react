@@ -1,0 +1,98 @@
+@use "../../utils/variables" as *;
+
+@mixin slide-in {
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    animation: slideIn 1s ease-out forwards;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: $light__grey;
+
+    &__container {
+        position: relative;
+        padding: 0 20px;
+
+			/* Vertical connecting line */
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 0;
+				width: 4px;
+				height: 100%;
+				background-color: $mauve;
+				transform: translateX(-50%);
+			}
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 2rem 0;
+
+        /* Apply animation */
+        @include slide-in;
+    }
+
+    /* Circle for each item */
+    &__circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $mimi__pink;
+        border: 3px solid $secondary__color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    &__content {
+        margin-left: 40px;
+        width: calc(100% - 40px);
+        padding: 1.5rem;
+        background-color: $secondary__color;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        /* Hover effect for timeline items */
+        &:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: $primary__color;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $primary__color;
+        }
+
+        .timeline__date {
+            display: block;
+            color: $periwinkle;
+            margin: 0.5rem 0;
+        }
+
+        .timeline__description {
+            color: $jordy__blue;
+            font-size: 0.9rem;
+        }
+    }
+}

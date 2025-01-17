@@ -23,7 +23,7 @@ const TechnicalSkills = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
-						<h2 className="align-centre uppercase">Technical Skills</h2>
+						<h2 className="align-centre">Technical Skills.</h2>
 						<div className="hexagon-grid skills">
 							<div className="skills__container">
 								<div className="hexagon default__gradient--background">
