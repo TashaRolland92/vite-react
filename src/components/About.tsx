@@ -11,13 +11,12 @@ const About = () => {
 					</div>
 					<div className="col-12 col-md-6">
 						<div className="about__image-container">
-							<img src={Selfie} alt="Picture of Tasha" className="about__image" />
+							<img src={Selfie} alt="Picture of Tasha" className="about__image" loading="lazy" />
 						</div>
 						<div className="btn-container">
 							<a href={TRA_CV} className="btn btn__cv" target="_blank">CV</a>
 							<a href="https://github.com/TashaRolland92" className="btn btn__github" target="_blank">GitHub</a>
 							<a href="https://www.linkedin.com/in/tasharolland/" className="btn btn__linkedin" target="_blank">LinkedIn</a>
-
 						</div>
 					</div>
 					<div className="col-12 col-md-6">

@@ -1,10 +1,10 @@
-import JS from "../assets/technical/JavaScript-logo.png";
-import TS from "../assets/technical/Typescript-logo.png";
-import HTML from "../assets/technical/HTML5-logo.png";
+import JS from "../assets/technical/javascript-logo.png"
+import TS from "../assets/technical/typescript-logo.png";
+import HTML from "../assets/technical/html-logo.png";
 import CSS from "../assets/technical/css-logo.png";
-import REACT from "../assets/technical/React-logo.png";
-import PHP from "../assets/technical/PHP-logo.png";
-import MYSQL from "../assets/technical/mysql-logo.png";
+import REACT from "../assets/technical/react-logo.png";
+import PHP from "../assets/technical/php-logo.png";
+import PS from "../assets/technical/photoshop-logo.png";
 import NODEJS from "../assets/technical/nodejs-logo.png";
 
 const TechnicalSkills = () => {
@@ -34,7 +34,7 @@ const TechnicalSkills = () => {
 								<img src={PHP} alt="PHP Logo" />
 							</div>
 							<div className="hexagon">
-								<img src={MYSQL} alt="MySQL Logo" />
+								<img src={PS} alt="MySQL Logo" />
 							</div>
 							<div className="hexagon">
 								<img src={NODEJS} alt="Node JS Logo" />
