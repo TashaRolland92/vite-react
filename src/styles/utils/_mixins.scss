@@ -1,8 +1,15 @@
 // Responsive Breakpoints
+$mobile: 576px;
 $tablet: 768px;
 $tabletLandscape: 1024px;
 $desktop: 992px;
-$desktopLarge: 1400px;
+$desktopLarge: 1200px;
+
+@mixin mobile{
+    @media(min-width: #{$mobile}){
+        @content;
+    }
+}
 
 @mixin tablet{
     @media(min-width: #{$tablet}){

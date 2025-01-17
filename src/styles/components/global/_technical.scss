@@ -1,14 +1,18 @@
 @use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
 
 .technical-skills{
 	padding-bottom: 30px;
-	height: 100vh;
 }
 
 .hexagon-grid{
 	gap: 20px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Flexible columns */
+
+	@include desktopLarge{
+		grid-template-columns: repeat(8, minmax(120px, 1fr));
+	}
 
 	.hexagon{
 		width: 120px;
@@ -19,7 +23,7 @@
 		align-items: center;
 		justify-content: center;
 		background-color: $jordy__blue; // gradient fallback
-		transition: transform 0.3s ease, background-color 0.3s ease;
+		transition: transform 0.3s ease;
 		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 		img{
@@ -43,8 +47,9 @@
 	&__container{
 		display: flex;
 		text-align: center;
-		align-items: center; // Center-align text with the hexagon
+		align-items: center;
 		flex-direction: column;
+		justify-content: center;
 
 		&:hover{
 
