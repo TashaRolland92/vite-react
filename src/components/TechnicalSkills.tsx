@@ -1,19 +1,11 @@
 import JS from "../assets/technical/javascript-logo.png"
-console.log(JS);
 import TS from "../assets/technical/typescript-logo.png";
-console.log(TS);
 import HTML from "../assets/technical/html-logo.png";
-console.log(HTML);
 import CSS from "../assets/technical/css-logo.png";
-console.log(CSS);
 import REACT from "../assets/technical/react-logo.png";
-console.log(REACT);
 import PHP from "../assets/technical/php-logo.png";
-console.log(PHP);
 import PS from "../assets/technical/photoshop-logo.png";
-console.log(PS);
 import NODEJS from "../assets/technical/nodejs-logo.png";
-console.log(NODEJS);
 
 const TechnicalSkills = () => {
 	return (
