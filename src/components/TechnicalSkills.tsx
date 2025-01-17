@@ -1,7 +1,7 @@
 import JS from "../assets/technical/JavaScript-logo.png";
 import TS from "../assets/technical/Typescript-logo.png";
 import HTML from "../assets/technical/HTML5-logo.png";
-import CSS from "../assets/technical/CSS3-logo.png";
+import CSS from "../assets/technical/css-logo.png";
 import REACT from "../assets/technical/React-logo.png";
 import PHP from "../assets/technical/PHP-logo.png";
 import MYSQL from "../assets/technical/mysql-logo.png";
@@ -13,7 +13,7 @@ const TechnicalSkills = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
-						<h2 className="align-centre">Technical Skills</h2>
+						<h2 className="align-centre uppercase">Technical Skills</h2>
 						<div className="hexagon-grid">
 							<div className="hexagon">
 								<img src={JS} alt="JavaScript Logo" />
