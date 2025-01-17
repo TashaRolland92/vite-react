@@ -14,30 +14,54 @@ const TechnicalSkills = () => {
 				<div className="row">
 					<div className="col-12">
 						<h2 className="align-centre uppercase">Technical Skills</h2>
-						<div className="hexagon-grid">
-							<div className="hexagon">
-								<img src={JS} alt="JavaScript Logo" />
+						<div className="hexagon-grid skills">
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={JS} alt="JavaScript Logo" />
+								</div>
+								<span className="skills__name">JavaScript</span>
 							</div>
-							<div className="hexagon">
-								<img src={TS} alt="TypeScript Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={TS} alt="TypeScript Logo" />
+								</div>
+								<span className="skills__name">TypeScript</span>
 							</div>
-							<div className="hexagon">
-								<img src={HTML} alt="HTML5 Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={HTML} alt="HTML5 Logo" />
+								</div>
+								<span className="skills__name">HTML5</span>
 							</div>
-							<div className="hexagon">
-								<img src={CSS} alt="CSS3 Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={CSS} alt="CSS3 Logo" />
+								</div>
+								<span className="skills__name">CSS3</span>
 							</div>
-							<div className="hexagon">
-								<img src={REACT} alt="React Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={REACT} alt="React Logo" />
+								</div>
+								<span className="skills__name">React</span>
 							</div>
-							<div className="hexagon">
-								<img src={PHP} alt="PHP Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={PHP} alt="PHP Logo" />
+								</div>
+								<span className="skills__name">PHP</span>
 							</div>
-							<div className="hexagon">
-								<img src={PS} alt="MySQL Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={PS} alt="Adobe Photoshop Logo" />
+								</div>
+								<span className="skills__name">Adobe Photoshop</span>
 							</div>
-							<div className="hexagon">
-								<img src={NODEJS} alt="Node JS Logo" />
+							<div className="skills__container">
+								<div className="hexagon default__gradient--background">
+									<img src={NODEJS} alt="Node JS Logo" />
+								</div>
+								<span className="skills__name">NodeJS</span>
 							</div>
 						</div>
 					</div>

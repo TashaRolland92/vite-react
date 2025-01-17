@@ -29,9 +29,13 @@ $desktopLarge: 1400px;
 }
 
 
-//  Gradient Text
-@mixin gradientText($colors...) {
-    background: linear-gradient(to right, $colors...);
+//  Gradients
+@mixin gradientBackground($colours...){
+	background: linear-gradient(to right, $colours...);
+}
+
+@mixin gradientText($colours...) {
+    background: linear-gradient(to right, $colours...);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
