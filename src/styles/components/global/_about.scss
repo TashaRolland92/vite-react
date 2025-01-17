@@ -1,6 +1,7 @@
 @use "../../utils/variables" as *;
 
 .about{
+	padding-bottom: 30px;
     background-color: #ffe6ff;
 
     &__title{
@@ -15,6 +16,10 @@
 
     &__image{
         width: 100%;
-        max-width: 350px;
+        max-width: 500px;
     }
+
+	&__emoji{
+		font-size: 1.4em;
+	}
 }
