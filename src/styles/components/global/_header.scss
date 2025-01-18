@@ -2,8 +2,10 @@
 
 header{
     top: 0;
+	left: 0;
+	right: 0;
     z-index: 100;
-    position: sticky;
+    position: fixed;
     background-color: $secondary__color;
     border-bottom: 1px solid $periwinkle;
 
