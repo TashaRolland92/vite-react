@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 interface TimelineItem{
 	title: string;
 	company: string;

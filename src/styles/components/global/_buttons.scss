@@ -29,14 +29,6 @@
     }
 
     &__cv{
-        border: 3px solid $mimi__pink;
-
-        &:hover{
-            background-color: $mimi__pink;
-        }
-    }
-
-    &__github{
         border: 3px solid $mauve;
 
         &:hover{
@@ -44,11 +36,19 @@
         }
     }
 
-    &__linkedin{
+    &__github{
         border: 3px solid $lilac;
 
         &:hover{
             background-color: $lilac;
+        }
+    }
+
+    &__linkedin{
+        border: 3px solid $periwinkle;
+
+        &:hover{
+            background-color: $periwinkle;
         }
     }
 }
