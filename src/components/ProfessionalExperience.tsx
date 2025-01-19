@@ -5,6 +5,7 @@ import EY from "../assets/professional/ey-logo.png";
 import NL from "../assets/professional/new-look-logo.png";
 import PP from "../assets/professional/pod-point-icon.png";
 import CD from "../assets/professional/copia-logo.png";
+import TRA_CV from "/TRA_CV.pdf";
 
 const ProfessionalExperience = () => {
   return (
@@ -81,6 +82,10 @@ const ProfessionalExperience = () => {
 						<p>HTML5, CSS3, PHP, CMS, SVN, Adobe Photoshop, D3, Balsamiq, phpMyAdmin.</p>
 					</VerticalTimelineElement>
 				</VerticalTimeline>
+
+				<div className="col-12">
+					<p className="align-centre">Feel free to view my <a href={TRA_CV} target="_blank">CV</a> for a detailed overview of my experience.</p>
+				</div>
 			</div>
 		</div>
     </section>
