@@ -1,0 +1,78 @@
+@use 'sass:color';
+@use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
+
+.footer{
+	padding: 20px 0;
+	@include gradientBorder($mimi__pink, $mauve, $lilac, $periwinkle, $jordy__blue);
+
+	hr{
+		margin: 10px 0;
+		border-color: $mauve;
+	}
+
+	p{
+		margin: 0;
+		font-size: 1.4em;
+	}
+
+	&__socials{
+		gap: 10px;
+		display: flex;
+
+		a:hover,
+		a:focus{
+			outline: 0;
+		}
+
+		.svg-inline--fa{
+			height: 2em;
+			transition: color .3s ease;
+		}
+
+		.instagram{
+			color: $mimi__pink;
+		}
+
+		.youtube{
+			color: $mauve;
+		}
+
+		.tiktok{
+			color: $lilac;
+		}
+
+		.linkedin{
+			color: $periwinkle;
+		}
+
+		a:hover{
+
+			.instagram{
+				color: color.scale($mimi__pink, $lightness: -10%);
+			}
+
+			.youtube{
+				color: color.scale($mauve, $lightness: -10%);
+			}
+
+			.tiktok{
+				color: color.scale($lilac, $lightness: -10%);
+			}
+
+			.linkedin{
+				color: color.scale($periwinkle, $lightness: -10%);
+			}
+		}
+	}
+
+	.contact-btn__container{
+		margin: 20px 0 10px 0;
+
+		@include tablet{
+			margin: 0;
+			display: flex;
+			justify-content: end;
+		}
+	}
+}
