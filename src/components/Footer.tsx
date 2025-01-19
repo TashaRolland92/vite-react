@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube, faTiktok, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import TRA_CV from "/TRA_CV.pdf";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
