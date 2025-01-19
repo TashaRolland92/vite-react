@@ -6,7 +6,11 @@
 	background: $light__grey;
 }
 
-.vertical-timeline-element--work{
+.vertical-timeline{
+	margin-bottom: 40px;
+}
+
+.vertical-timeline-element{
 
 	.vertical-timeline-element-icon{
 
@@ -24,5 +28,9 @@
 
 	.vertical-timeline-element-subtitle{
 		font-size: 1.4em;
+	}
+
+	.vertical-timeline-element-content{
+		box-shadow: 0 3px 0 $secondary__color;
 	}
 }
