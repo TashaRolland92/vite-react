@@ -5,10 +5,10 @@ const Hero = () => (
     <section className="hero">
         <div className="container">
             <div className="row">
-                <div className="col-12 col-md-6 d-flex">
+                <div className="col-12 col-md-7 d-flex">
                     <HeroContent />
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-5 d-flex">
                     <div className="hero__image-container">
                         <img
                             src={HeroImage}
