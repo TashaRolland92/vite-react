@@ -1,18 +1,49 @@
 @use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
 
 .hero{
 	height: 100vh;
 
     &__content{
         display: flex;
+		margin: 40px 0;
         flex-direction: column;
         justify-content: center;
+
+		@include tablet{
+			margin: 0;
+		}
     }
 
-    &__subtitle{
+	&__title{
+		margin: 0;
 		font-size: 4em;
+		font-weight: 900;
+		white-space: nowrap;
+
+		@include tablet{
+			white-space: normal;
+		}
+
+		@include tabletLandscape{
+			font-size: 6em;
+		}
+	}
+
+    &__subtitle{
+		font-size: 2.8em;
         margin: 0 0 10px;
+
+		@include tabletLandscape{
+			font-size: 3em;
+		}
     }
+
+	h3{
+		@include tabletLandscape{
+			max-width: 460px;
+		}
+	}
 
     &__image-container{
         display: flex;
