@@ -23,7 +23,7 @@ const ProfessionalExperience = () => {
 						contentArrowStyle={{ borderRight: '14px solid #FFD6FF' }}
 						date="Sept 2020 - Nov 2024"
 						iconStyle={{ background: '#FFD6FF', color: '#FFF' }}
-						icon={<img src={BI} alt="Bordeaux Index" />}
+						icon={<img src={BI} alt="Bordeaux Index" loading="lazy" />}
 					>
 						<h3 className="vertical-timeline-element-title jordy-blue">Frontend Engineer</h3>
 						<h4 className="vertical-timeline-element-subtitle">Bordeaux Index</h4>
@@ -36,7 +36,7 @@ const ProfessionalExperience = () => {
 						contentStyle={{ background: '#E7C6FF', color: '#4E4A52', fontSize: '12px' }}
 						contentArrowStyle={{ borderRight: '14px solid #E7C6FF' }}
 						iconStyle={{ background: '#E7C6FF', color: '#4E4A52' }}
-						icon={<img src={EY} alt="Ernst & Young LLP" />}
+						icon={<img src={EY} alt="Ernst & Young LLP" loading="lazy" />}
 					>
 						<h3 className="vertical-timeline-element-title jordy-blue">Frontend Developer</h3>
 						<h4 className="vertical-timeline-element-subtitle">Ernst & Young LLP</h4>
@@ -49,7 +49,7 @@ const ProfessionalExperience = () => {
 						contentStyle={{ background: '#C8B6FF', color: '#4E4A52', fontSize: '12px' }}
 						contentArrowStyle={{ borderRight: '14px solid #C8B6FF' }}
 						iconStyle={{ background: '#C8B6FF', color: '#4E4A52' }}
-						icon={<img src={NL} alt="New Look" />}
+						icon={<img src={NL} alt="New Look" loading="lazy" />}
 					>
 						<h3 className="vertical-timeline-element-title mimi-pink">Frontend Developer</h3>
 						<h4 className="vertical-timeline-element-subtitle">New Look</h4>
@@ -62,7 +62,7 @@ const ProfessionalExperience = () => {
 						contentStyle={{ background: '#B8C0FF', color: '#4E4A52', fontSize: '12px' }}
 						contentArrowStyle={{ borderRight: '14px solid #B8C0FF' }}
 						iconStyle={{ background: '#B8C0FF', color: '#4E4A52' }}
-						icon={<img src={PP} alt="Pod Point" />}
+						icon={<img src={PP} alt="Pod Point" loading="lazy" />}
 					>
 						<h3 className="vertical-timeline-element-title mimi-pink">Frontend Developer</h3>
 						<h4 className="vertical-timeline-element-subtitle">Pod Point</h4>
@@ -75,7 +75,7 @@ const ProfessionalExperience = () => {
 						contentStyle={{ background: '#94B2F5', color: '#4E4A52', fontSize: '12px' }}
 						contentArrowStyle={{ borderRight: '14px solid #94B2F5' }}
 						iconStyle={{ background: '#94B2F5', color: '#4E4A52' }}
-						icon={<img src={CD} alt="Copia Digital" />}
+						icon={<img src={CD} alt="Copia Digital" loading="lazy" />}
 					>
 						<h3 className="vertical-timeline-element-title mimi-pink">Web Designer/Developer</h3>
 						<h4 className="vertical-timeline-element-subtitle">Copia Digital</h4>
@@ -84,7 +84,7 @@ const ProfessionalExperience = () => {
 				</VerticalTimeline>
 
 				<div className="col-12">
-					<p className="align-centre">Feel free to view my <a href={TRA_CV} target="_blank">CV</a> for a detailed overview of my experience.</p>
+					<p className="align-centre">View my <a href={TRA_CV} target="_blank">CV</a> for a detailed overview of my experience.</p>
 				</div>
 			</div>
 		</div>
