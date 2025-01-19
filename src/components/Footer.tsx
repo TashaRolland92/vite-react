@@ -15,7 +15,7 @@ const Footer = () => {
 		<section id="footer" className="footer">
 			<div className="container">
 				<div className="row">
-					<div className="col-12 col-md-6">
+					<div className="col-6 d-flex">
 						<div className="footer__socials">
 							{socialData.map((social, index) =>(
 								<a href={social.href} target="_blank" key={index}>
@@ -24,7 +24,7 @@ const Footer = () => {
 							))}
 						</div>
 					</div>
-					<div className="col-12 col-md-6">
+					<div className="col-6">
 						<div className="contact-btn__container">
 							<a href="mailto:hi@tasharolland.com" className="btn btn__contact">Contact Me!</a>
 						</div>
