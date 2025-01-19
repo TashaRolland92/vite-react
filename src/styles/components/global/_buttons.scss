@@ -4,6 +4,7 @@
 .btn-container{
     gap: 20px;
     display: flex;
+	margin: 40px 0 20px 0;
     flex-direction: column;
     justify-content: center;
 
@@ -18,18 +19,28 @@
     display: flex;
     padding: 0 10px;
     font-size: 1.8em;
+	border-radius: 4px;
     align-items: center;
     text-decoration: none;
     color: $primary__color;
     justify-content: center;
     transition: all .3s ease;
+	border: 3px solid transparent;
 
     @include tablet{
         max-width: 140px;
     }
 
+	&__contact{
+		border-color: $mauve;
+
+		&:hover{
+			background-color: $mauve;
+		}
+	}
+
     &__cv{
-        border: 3px solid $mauve;
+        border-color: $mauve;
 
         &:hover{
             background-color: $mauve;
@@ -37,7 +48,7 @@
     }
 
     &__github{
-        border: 3px solid $lilac;
+        border-color: $lilac;
 
         &:hover{
             background-color: $lilac;
@@ -45,7 +56,7 @@
     }
 
     &__linkedin{
-        border: 3px solid $periwinkle;
+        border-color: $periwinkle;
 
         &:hover{
             background-color: $periwinkle;
