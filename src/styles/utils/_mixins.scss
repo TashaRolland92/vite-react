@@ -51,5 +51,4 @@ $desktopLarge: 1200px;
 @mixin gradientBorder($colours...){
 	border-top: 6px solid; /* Define the border width */
 	border-image: linear-gradient(to right, $colours...) 1;
-	padding: 20px;
 }

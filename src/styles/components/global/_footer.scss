@@ -3,12 +3,12 @@
 @use "../../utils/mixins" as *;
 
 .footer{
-	padding: 20px 0;
+	padding: 30px 0;
 	@include gradientBorder($mimi__pink, $mauve, $lilac, $periwinkle, $jordy__blue);
 
 	hr{
 		margin: 10px 0;
-		border-color: $mauve;
+		border-top: 1px solid $mauve;
 	}
 
 	p{
@@ -19,6 +19,8 @@
 	&__socials{
 		gap: 10px;
 		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		a:hover,
 		a:focus{
@@ -26,7 +28,7 @@
 		}
 
 		.svg-inline--fa{
-			height: 2em;
+			height: 1.4em;
 			transition: color .3s ease;
 		}
 
@@ -67,7 +69,7 @@
 	}
 
 	.contact-btn__container{
-		margin: 20px 0 10px 0;
+		margin-bottom: 2px;
 
 		@include tablet{
 			margin: 0;
