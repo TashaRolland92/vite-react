@@ -3,17 +3,19 @@
 
 // Define breakpoints
 $breakpoints: (
-	sm: 576px,
+	sm: 625px,
 	md: 768px,
 	lg: 992px,
+	mdr: 860px,
 	xl: 1200px,
 	xxl: 1400px,
 );
 
 // Define container widths for each breakpoint
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
+	sm: 600px,
+	md: 740px,
+	mdr: 860px,
 	lg: 960px,
 	xl: 1140px,
 	xxl: 1320px,
@@ -43,28 +45,6 @@ $gutter: 15px;
 	@include container();
 }
 
-// Define container-lg
-.container-lg {
-	width: 100%;
-	@include container();
-}
-
-// Adjusting for large screens using a specific class
-.container-xl {
-	@include container();
-	@media (min-width: 1200px) {
-	  max-width: 1140px;
-	}
-}
-
-// .container-xxl for 1400px and up
-.container-xxl {
-	@include container();
-	@media (min-width: 1400px) {
-	  max-width: 1320px;
-	}
-}
-
 // Create a mixin for responsive columns
 @mixin make-col($size, $columns: 12) {
 	padding-left: $gutter;
@@ -82,8 +62,40 @@ $gutter: 15px;
 }
 
 // Column styling
+.col-6 {
+	width: 50%;
+    flex: 0 0 auto;
+    max-width: 100%;
+	padding-left: $gutter;
+	padding-right: $gutter;
+
+    @media (min-width: map.get($breakpoints, sm)) {
+        @include make-col(6);
+    }
+}
+
 .col-12 {
 	@include make-col(12);
+}
+
+// Define .col-md-4
+.col-md-4 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, md)) {
+		@include make-col(4, 12); // 4 out of 12 columns
+	}
+}
+
+// Define .col-md-5
+.col-md-5 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, md)) {
+		@include make-col(5, 12); // 5 out of 12 columns
+	}
 }
 
 .col-md-6 {
@@ -95,7 +107,43 @@ $gutter: 15px;
 	}
 }
 
+// Define .col-md-7
+.col-md-7 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, md)) {
+		@include make-col(7, 12); // 7 out of 12 columns
+	}
+}
+
+// Define .col-md-8
+.col-md-8 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, md)) {
+		@include make-col(8, 12); // 8 out of 12 columns
+	}
+}
+
+// Define .col-lg-6
+.col-lg-6 {
+	flex: 0 0 100%;
+	max-width: 100%;
+
+	@media (min-width: map.get($breakpoints, lg)) {
+		@include make-col(6);
+	}
+}
+
 // Global Grid Classes
 .d-flex{
 	display: flex;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

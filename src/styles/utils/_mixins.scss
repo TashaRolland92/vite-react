@@ -41,9 +41,14 @@ $desktopLarge: 1200px;
 	background: linear-gradient(to right, $colours...);
 }
 
-@mixin gradientText($colours...) {
+@mixin gradientText($colours...){
     background: linear-gradient(to right, $colours...);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientBorder($colours...){
+	border-top: 6px solid; /* Define the border width */
+	border-image: linear-gradient(to right, $colours...) 1;
 }

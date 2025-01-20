@@ -4,18 +4,18 @@ header{
     top: 0;
     z-index: 100;
     position: sticky;
-    background-color: $secondary__color;
+	background-color: $light__pink;
     border-bottom: 1px solid $periwinkle;
+}
 
-    h1{
-        display: flex;
-        font-size: 4em;
-        align-items: center;
-        text-transform: uppercase;
+.logo{
+	display: flex;
+	font-size: 4em;
+	align-items: center;
+	text-transform: uppercase;
 
-        .diamond-icon{
-            max-width: 45px;
-            margin-right: 10px;
-        }
-    }
+	.diamond-icon{
+		max-width: 45px;
+		margin-right: 10px;
+	}
 }

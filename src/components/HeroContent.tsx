@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 const HeroContent = () => (
     <div className="hero__content">
-        <h1 className="hero__title">Hi, I'm <span className="default__gradient--text  uppercase">Tasha</span></h1>
+        <h1 className="hero__title">Hi, I'm <span className="default__gradient--text  uppercase">Tasha.</span></h1>
         <h2 className="hero__subtitle">I'm a&nbsp;
             <span className="default__gradient--text">
                 <ReactTyped

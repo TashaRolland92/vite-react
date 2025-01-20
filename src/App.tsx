@@ -5,6 +5,7 @@ import About from './components/About';
 import TechnicalSkills from './components/TechnicalSkills';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => (
 	<>
@@ -16,6 +17,7 @@ const App = () => (
 				<TechnicalSkills />
 				<ProfessionalExperience />
 				<Contact />
+				<Footer />
 			</>
 		) : (
 			<Landing />

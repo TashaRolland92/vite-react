@@ -1,0 +1,36 @@
+@use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
+
+.professional-experience{
+	padding-bottom: 30px;
+	background: $light__grey;
+}
+
+.vertical-timeline{
+	margin-bottom: 40px;
+}
+
+.vertical-timeline-element{
+
+	.vertical-timeline-element-icon{
+
+		img{
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%, -50%) scale(0.8);
+
+			@include desktopLarge{
+				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+	}
+
+	.vertical-timeline-element-subtitle{
+		font-size: 1.4em;
+	}
+
+	.vertical-timeline-element-content{
+		box-shadow: 0 3px 0 $secondary__color;
+	}
+}

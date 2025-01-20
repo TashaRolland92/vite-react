@@ -26,7 +26,7 @@ const Nav = () => {
 
     return (
         <nav className="nav">
-            <h1 className="default__gradient--text"><img src={Logo} alt="Gradient Diamond Icon" className="diamond-icon"/> Tasha</h1>
+            <h1 className="default__gradient--text logo"><img src={Logo} alt="Gradient Diamond Icon" className="diamond-icon" /> Tasha</h1>
             <div className={`menu-toggle ${isNavOpen ? 'menu-toggle--active' : ''}`} id="mobileMenu" onClick={toggleNav}>
                 <span className="menu-toggle__bar menu-toggle--top"></span>
                 <span className="menu-toggle__bar menu-toggle--middle"></span>
@@ -43,7 +43,7 @@ const Nav = () => {
                     <a href="#section3" onClick={(e) => handleLinkClick(e, 'section3')} className="nav__link">Professional Experience</a>
                 </li>
                 <li className="nav__item nav__item--four">
-                    <a href="#section4" onClick={(e) => handleLinkClick(e, 'section4')} className="nav__link">Contact</a>
+                    <a href="mailto:hi@tasharolland.com" className="nav__link">Contact</a>
                 </li>
             </ul>
         </nav>

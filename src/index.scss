@@ -15,12 +15,5 @@
 @use "./styles/components/global/hero";
 @use "./styles/components/global/about";
 @use "./styles/components/global/technical";
-
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $light__grey;
-    border-bottom: 1px solid #ccc;
-}
+@use "./styles/components/global/professional-experience";
+@use "./styles/components/global/footer";
