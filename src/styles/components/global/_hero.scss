@@ -2,7 +2,10 @@
 @use "../../utils/mixins" as *;
 
 .hero{
-	height: 100vh;
+
+	@include tablet{
+		height: 100vh;
+	}
 
     &__content{
         display: flex;
@@ -47,7 +50,12 @@
 
     &__image-container{
         display: flex;
+		margin-bottom: 40px;
         justify-content: center;
+
+		@include tablet{
+			margin-bottom: 0;
+		}
     }
 
     &__image{

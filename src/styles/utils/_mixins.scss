@@ -52,3 +52,13 @@ $desktopLarge: 1200px;
 	border-top: 6px solid; /* Define the border width */
 	border-image: linear-gradient(to right, $colours...) 1;
 }
+
+// Top Title
+@mixin topTitle($colour){
+	display: flex;
+	color: $colour;
+	margin-top: 30px;
+	font-size: 1.8em;
+	justify-content: center;
+	text-transform: uppercase;
+}

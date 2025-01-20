@@ -4,6 +4,10 @@
 .professional-experience{
 	padding-bottom: 30px;
 	background: $light__grey;
+
+	&__top-title{
+		@include topTitle($periwinkle);
+	}
 }
 
 .vertical-timeline{

@@ -18,48 +18,25 @@
     height: 40px;
     display: flex;
     padding: 0 10px;
-    font-size: 1.8em;
+    font-size: 1.4em;
+	font-weight: 600;
+	transition: 0.5s;
+	line-height: 38px;
 	border-radius: 4px;
     align-items: center;
     text-decoration: none;
     color: $primary__color;
     justify-content: center;
-    transition: all .3s ease;
-	border: 3px solid transparent;
+	text-transform: uppercase;
+	background-size: 200% auto;
+	background-image: linear-gradient(to right, #E7C6FF 0%, #C8B6FF  51%, #B8C0FF  100%);
 
     @include tablet{
-        max-width: 140px;
+		max-width: 140px;
     }
 
-	&__contact{
-		border-color: $mauve;
-
-		&:hover{
-			background-color: $mauve;
-		}
+	&:hover{
+		text-decoration: none;
+		background-position: right center; /* change the direction of the background */
 	}
-
-    &__cv{
-        border-color: $mauve;
-
-        &:hover{
-            background-color: $mauve;
-        }
-    }
-
-    &__github{
-        border-color: $lilac;
-
-        &:hover{
-            background-color: $lilac;
-        }
-    }
-
-    &__linkedin{
-        border-color: $periwinkle;
-
-        &:hover{
-            background-color: $periwinkle;
-        }
-    }
 }
