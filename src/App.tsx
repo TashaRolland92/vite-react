@@ -1,4 +1,3 @@
-import Landing from './components/Landing';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,19 +8,13 @@ import Footer from './components/Footer';
 
 const App = () => (
 	<>
-		{process.env.NODE_ENV === "development" ? (
-			<>
-				<Header />
-				<Hero />
-				<About />
-				<TechnicalSkills />
-				<ProfessionalExperience />
-				<Contact />
-				<Footer />
-			</>
-		) : (
-			<Landing />
-		)}
+		<Header />
+		<Hero />
+		<About />
+		<TechnicalSkills />
+		<ProfessionalExperience />
+		<Contact />
+		<Footer />
 	</>
 );
 

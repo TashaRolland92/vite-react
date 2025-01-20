@@ -17,6 +17,12 @@
     &__image{
         width: 100%;
         max-width: 500px;
+		transform: scale(1) rotate(0deg);
+		transition: all .3s ease-in-out;
+
+		&:hover{
+			transform: scale(1.2) rotate(-10deg);
+		}
     }
 
 	&__emoji{
