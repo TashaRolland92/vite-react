@@ -53,8 +53,9 @@
 }
 
 .nav{
-    display: flex;
     height: 80px;
+    display: flex;
+	position: relative;
     align-items: center;
     justify-content: space-between;
 
