@@ -3,6 +3,10 @@
 
 .technical-skills{
 	padding-bottom: 30px;
+
+	&__top-title{
+		@include topTitle($mauve)
+	}
 }
 
 .hexagon-grid{

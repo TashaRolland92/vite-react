@@ -40,6 +40,7 @@ const TechnicalSkills = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
+						<span className="technical-skills__top-title align-centre">Dev Toolkit</span>
 						<h2 className="align-centre">Technical Skills.</h2>
 						<div className="hexagon-grid skills">
 							{skillsData.map((skill, index) => (

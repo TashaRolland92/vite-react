@@ -1,8 +1,13 @@
 @use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
 
 .about{
 	padding-bottom: 20px;
-    background-color: #ffe6ff;
+    background-color: #FFE6FF;
+
+	&__top-title{
+		@include topTitle($lilac);
+	}
 
     &__title{
         margin-bottom: 30px;

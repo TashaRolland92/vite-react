@@ -13,6 +13,7 @@ const ProfessionalExperience = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-12">
+					<span className="professional-experience__top-title align-centre">My Frontend Footprint</span>
 					<h2 className="align-centre">Professional Experience.</h2>
 				</div>
 
