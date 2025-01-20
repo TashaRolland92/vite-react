@@ -26,6 +26,14 @@
 		}
 	}
 
+	.vertical-timeline-element-title{
+		font-size: 1.6em;
+
+		@include tablet{
+			font-size: 2em;
+		}
+	}
+
 	.vertical-timeline-element-subtitle{
 		font-size: 1.4em;
 	}
